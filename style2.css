@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-image: url(banner1.jpg);
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 10px;
+    /* position: fixed; */
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(65, 86, 126);
+}
+
+footer {
+    /* padding-top: 95%; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    background-color: #040d3f;
+    padding: 15px;
+    margin-top: auto;
+    /* margin-bottom: 0px; */
+}
+
+h2 {
+    text-align: center;
+    color: rgb(160, 160, 151);
+}
+
+li{
+    list-style: none;
+
+}
+
+a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    /* font-size: 10px;
+    letter-spacing: 0.5px; */
+    
+
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(199, 214, 58);;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+.container{
+    width: 1280px;
+    margin: auto;
+}
+
+.first{
+    width: 95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.white{
+    font-size: 60px;
+    width: 95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-right: 50%;
+    /* padding-bottom: 50%; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.black{
+    font-size: 40px;
+    width: 95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: bisque;
+    text-align: center;
+}
+
+.click{
+    width: 310px;
+    height: 35px;
+    font-weight: bold;
+    background-color: rgb(199, 214, 58);
+    letter-spacing: 7px;
+    margin-top: 5px;
+    margin-left: 50px;
+    font-size: 25px;
+    color: rgb(44, 10, 10);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    
+    text-align: center; margin: 50px;;
+    padding: 0px;
+}
+
+.btext{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 0px;
+    color: rgb(44, 10, 10);
+}
+
+.navbar{
+ width: 95%;
+ margin: auto;
+ min-height: 70px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 60px;
+    margin: auto;
+
+}
+
+
+.nav-branding{
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+}
+
+/* .HOME, .ABOUT, .CONSTACTS{
+    height: 730px;
+    margin-top: 70px;
+    border: 1px solid black;
+} */
+
+/* .ABOUT, .CONSTACTS{
+    margin-top: ;
+} */
+
+@media(max-width:1280px){
+    .container{
+        width: 100%;
+    }
+}
